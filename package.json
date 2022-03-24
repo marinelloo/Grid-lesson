@@ -1,0 +1,30 @@
+{
+  "name": "Grid-lesson",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "browser-sync": "^2.27.9",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.4.0",
+    "parcel": "^2.4.0"
+  },
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "prod": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marinelloo/Grid-lesson.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marinelloo/Grid-lesson/issues"
+  },
+  "homepage": "https://github.com/marinelloo/Grid-lesson#readme"
+}

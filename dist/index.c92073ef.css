@@ -1,0 +1,97 @@
+@import "https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Raleway:wght@400;500;900&display=swap";
+body {
+  font-family: Raleway, serif;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h3 {
+  font-weight: 900;
+  line-height: 28px;
+}
+
+h4 {
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.header__nav {
+  justify-content: space-between;
+  padding: 20px 170px;
+  display: flex;
+}
+
+.header .menu {
+  gap: 40px;
+  list-style: none;
+  display: flex;
+}
+
+.header .menu__item {
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.banner {
+  color: #fff;
+  text-align: center;
+  background-image: url("img.18fee513.jpg");
+  background-size: cover;
+}
+
+.banner__title {
+  padding-top: 230px;
+}
+
+.banner__button {
+  padding-bottom: 170px;
+}
+
+.gallery {
+  display: -ms-grid;
+  -ms-grid-columns: (1fr) [4];
+  max-width: 1510px;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+  display: grid;
+}
+
+.gallery__item {
+  position: relative;
+}
+
+.gallery .overlay {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all .5s;
+  position: absolute;
+  inset: 0;
+}
+
+.gallery__item:hover .overlay {
+  opacity: .8;
+  cursor: pointer;
+  background-color: #ff4343cc;
+}
+
+.gallery__item:active .overlay {
+  background-color: #b90c0ccc;
+}
+
+.gallery__text {
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 36%;
+  left: 30%;
+}
+
+.gallery img {
+  max-width: 100%;
+  display: block;
+}
+
+/*# sourceMappingURL=index.c92073ef.css.map */
