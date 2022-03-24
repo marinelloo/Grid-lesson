@@ -1,0 +1,101 @@
+@import 'typography.scss';
+@import 'colours.scss';
+
+body {
+    font-family: $font-main;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+h3 {
+    font-weight: $font-bold;
+    line-height: $lh-normal;
+}
+
+h4 {
+    font-weight: $font-normal;
+    line-height: $lh-small;
+}
+
+.header {
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 170px;
+    }
+
+    .menu {
+        list-style: none;
+        display: flex;
+        gap: 40px;
+
+        &__item {
+            display: inline-block;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.banner {
+    background-image: url('/images/img.jpg');
+    background-size: cover;
+    color: $white;
+    text-align: center;
+
+    &__title {
+        padding-top: 230px;
+    }
+
+    &__button {
+        padding-bottom: 170px;
+    }
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    max-width: 1510px;
+
+    &__item {
+        position: relative;
+    }
+
+   .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+   }
+
+   &__item:hover .overlay {
+       opacity: 0.8;
+       background-color: $hover;
+       cursor: pointer;
+   }
+
+   &__item:active .overlay {
+    background-color: $active;
+}
+
+    &__text {
+        position: absolute;
+        top: 36%;
+        left: 30%;
+        text-align: center;
+        color: $white;
+    }
+
+    img {
+        display: block;
+        max-width: 100%;
+    }
+
+}
