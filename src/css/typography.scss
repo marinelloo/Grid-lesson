@@ -2,15 +2,43 @@
 
 $font-main: 'Raleway', serif; 
 //fonts-weight
-$font-normal: 400;
+$font-default: 400;
+$font-normal: 700;
 $font-bold: 900;
 
 // font sizes
 $fs-small: 18px;
 $fs-normal: 24px;
 $fs-large: 64px;
-
 //line-height
-
 $lh-normal: 28px;
 $lh-small: 21px;
+
+body {
+    font-family: $font-main;
+}
+
+h1 {
+    font-size: $fs-large;
+}
+
+h3 {
+    font-weight: $font-bold;
+    line-height: $lh-normal;
+}
+
+
+h4 {
+    font-size: $fs-normal;
+    line-height: $lh-normal;
+    font-weight: $font-bold;
+}
+
+h5 {
+    font-size: $fs-small;
+    font-weight: $font-default;
+}
+
+
+
+
