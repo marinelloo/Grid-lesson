@@ -214,4 +214,84 @@
         padding: 10px 0 17px;
     }
 
+    .fa-brands {
+        margin-top: 37px;
+        border: 1px solid #C6CBCD;
+        font-size: 18px;
+        padding: 10px;
+        color: $gray;
+    }
+
+}
+
+.feedback {
+    display: flex;
+    padding-top: 114px;
+    align-content: center;
+
+    &__quote {
+        background-color: #5C3249;
+        text-align: left;
+        font-family: $font-secondary;
+        color: $white;
+        font-size: 36px;
+        font-weight: $font-default;
+        font-style: italic;
+        padding: 114px 0 0 129px;
+        line-height: 48px;
+    }
+
+    .feedback-title {
+        padding-bottom: 30px;
+    }
+}
+
+.second-banner {
+    text-align: center;
+    
+    &__title {
+        padding: 114px 0 20px;
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .button {
+        margin: 47px 0 114px;
+    }
+}
+
+footer {
+    background-color: #353C65;
+
+    .footer-container {
+        color: $white;
+        display: grid;
+        text-align: center;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 71px 0;
+
+        .footer-title {
+            padding-bottom: 29px;
+            font-weight: $font-normal;
+            text-transform: uppercase;
+        }
+
+        .social {
+            padding-top: 20px;
+
+            .fa-brands {
+                font-size: 20px;
+                border: 1px solid #C6CBCD;
+                padding: 10px;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .copyright {
+        background-color: #2C3154;
+        padding: 24px 0;
+        color: #808080;
+        text-align: center;
+    }
 }

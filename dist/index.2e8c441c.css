@@ -232,4 +232,84 @@ h5 {
   padding: 10px 0 17px;
 }
 
+.contacts .fa-brands {
+  color: #6c7279;
+  border: 1px solid #c6cbcd;
+  margin-top: 37px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.feedback {
+  align-content: center;
+  padding-top: 114px;
+  display: flex;
+}
+
+.feedback__quote {
+  text-align: left;
+  color: #fff;
+  background-color: #5c3249;
+  padding: 114px 0 0 129px;
+  font-family: Cardo, serif;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 48px;
+}
+
+.feedback .feedback-title {
+  padding-bottom: 30px;
+}
+
+.second-banner {
+  text-align: center;
+}
+
+.second-banner__title {
+  padding: 114px 0 20px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.second-banner .button {
+  margin: 47px 0 114px;
+}
+
+footer {
+  background-color: #353c65;
+}
+
+footer .footer-container {
+  color: #fff;
+  text-align: center;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 71px 0;
+  display: grid;
+}
+
+footer .footer-container .footer-title {
+  text-transform: uppercase;
+  padding-bottom: 29px;
+  font-weight: 700;
+}
+
+footer .footer-container .social {
+  padding-top: 20px;
+}
+
+footer .footer-container .social .fa-brands {
+  border: 1px solid #c6cbcd;
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+footer .copyright {
+  color: gray;
+  text-align: center;
+  background-color: #2c3154;
+  padding: 24px 0;
+}
+
 /*# sourceMappingURL=index.2e8c441c.css.map */
