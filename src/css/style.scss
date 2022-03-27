@@ -68,13 +68,17 @@
             background-color: $white;
         }
 
+        .nav-link:active::before {
+            background-color: #E71414;
+        }
+
         .nav-link {
             cursor: pointer;
             font-weight: bold;
             font-size: 14px;
             text-transform: uppercase;
             text-decoration: none;
-            color: $white;
+            color: #BABBC5;
             padding: 7px 0px;
             margin: 0px 20px;
             display: inline-block;
@@ -90,10 +94,15 @@
             &--grow-up:hover::before {
                 height: 5px;
             }
+            
         }
 
         .nav-link:hover {
             opacity: 1;
+        }
+
+        .nav-link:active {
+            color: #E71414;
         }
     }
 }
@@ -135,6 +144,7 @@
 
     &__title {
         padding: 50px 0 44px;
+        text-transform: uppercase;
     }
 
     &__subtitle {
@@ -150,6 +160,7 @@
 
     &__item {
         position: relative;
+        transition: transform 500ms ease;
     }
 
 .overlay {
@@ -200,12 +211,23 @@
         list-style: none;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-column-gap: 10px;
-        justify-content: center;
+        // justify-items: center;
+        column-gap: 30px;
+        padding: 0 170px;
+    }
+
+    &__item {
+        word-wrap: break-word;
+        max-width: 270px;
+    }
+
+    &__text {
+        color: $gray;
     }
 
     &__image {
         padding-bottom: 30px;
+        aspect-ratio: 270/270;
     }
 
     &__job {
@@ -218,7 +240,7 @@
         margin-top: 37px;
         border: 1px solid #C6CBCD;
         font-size: 18px;
-        padding: 10px;
+        padding: 10px 15px;
         color: $gray;
     }
 
@@ -232,17 +254,25 @@
     &__quote {
         background-color: #5C3249;
         text-align: left;
-        font-family: $font-secondary;
         color: $white;
-        font-size: 36px;
-        font-weight: $font-default;
-        font-style: italic;
         padding: 114px 0 0 129px;
         line-height: 48px;
     }
 
-    .feedback-title {
+    &-title {
+        font-family: $font-secondary;
+        font-weight: $font-default;
+        font-size: 36px;
+        font-style: italic;
         padding-bottom: 30px;
+    }
+
+    &-subtitle {
+        font-size: 13px;
+        font-family: $font-main;
+        font-weight: $font-normal;
+        line-height: 13px;
+        text-transform: uppercase;
     }
 }
 
@@ -268,6 +298,7 @@ footer {
         display: grid;
         text-align: center;
         grid-template-columns: repeat(3, 1fr);
+        column-gap: 130px;
         padding: 71px 0;
 
         .footer-title {
@@ -282,7 +313,7 @@ footer {
             .fa-brands {
                 font-size: 20px;
                 border: 1px solid #C6CBCD;
-                padding: 10px;
+                padding: 10px 15px;
                 margin-right: 10px;
             }
         }
@@ -290,8 +321,13 @@ footer {
 
     .copyright {
         background-color: #2C3154;
-        padding: 24px 0;
+        padding: 24px 570px;
         color: #808080;
         text-align: center;
+        text-transform: capitalize;
+
+        .author {
+            color: $white;
+        }
     }
 }
