@@ -1,0 +1,44 @@
+
+
+.container {
+    padding: 10px;
+}
+
+.parent {
+    background-color: bisque;
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.child {
+    background-color: cadetblue;
+    width: 50%;
+    height: 50%;
+    animation: left-to-right 1s ease-in forwards infinite alternate;
+}
+
+.parent:hover .child {
+    animation-play-state: paused;
+    
+}
+
+@keyframes left-to-right {
+    0% {
+        background-color: cadetblue;
+        transform: translateX(0%);
+    }
+
+    33% {
+        transform: translateY(100%);
+    }
+
+    66% {
+        transform: translateX(100%) translateY(100%);
+    }
+
+    100% {
+        background-color: darkblue;
+        transform: translateX(100%);
+    }
+}
